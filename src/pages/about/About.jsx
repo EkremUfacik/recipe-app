@@ -10,6 +10,7 @@ const About = () => {
 
   useEffect(() => {
     !log && navigate("/");
+    // eslint-disable-next-line
   }, []);
 
   return (

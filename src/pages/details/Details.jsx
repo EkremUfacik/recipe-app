@@ -14,6 +14,7 @@ const Details = () => {
 
   useEffect(() => {
     !log && navigate("/");
+    // eslint-disable-next-line
   }, []);
 
   return (
