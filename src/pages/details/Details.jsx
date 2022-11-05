@@ -1,12 +1,21 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Container from "./style";
 import { FlexD } from "./style";
 import detailImg from "./../../assets/diet.svg";
 import Flex from "../../components/global/Flex.styled";
+import { useContext } from "react";
+import { useEffect } from "react";
+import { LoginContext } from "../../context/LoginProvider";
 
 const Details = () => {
   const { state } = useLocation();
-  console.log(state);
+  const navigate = useNavigate();
+  const { log } = useContext(LoginContext);
+
+  useEffect(() => {
+    !log && navigate("/");
+  }, []);
+
   return (
     <Container>
       <Flex style={{ justifyContent: "space-evenly", gap: "2rem" }}>

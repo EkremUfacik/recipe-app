@@ -1,7 +1,17 @@
+import { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { LoginContext } from "../../context/LoginProvider";
 import aboutImg from "./../../assets/coding.svg";
 import Container from "./style";
 
 const About = () => {
+  const navigate = useNavigate();
+  const { log } = useContext(LoginContext);
+
+  useEffect(() => {
+    !log && navigate("/");
+  }, []);
+
   return (
     <Container>
       <div>

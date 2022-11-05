@@ -22,8 +22,8 @@ const Login = () => {
           <img src={logImg} style={{ width: "130px" }} alt="" />
         </div>
         <h1>RECIPE APP</h1>
-        <input type="email" required />
-        <input type="password" name="" id="" required />
+        <input type="email" required placeholder="Enter your email" />
+        <input type="password" name="" id="" required placeholder="Password" />
         <button type="submit">Login</button>
       </Form>
     </Container>

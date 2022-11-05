@@ -15,12 +15,16 @@ const Form = styled.form`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 35rem;
-  height: 35rem;
+  width: 38rem;
+  height: 38rem;
   gap: 2rem;
   border-radius: 50%;
+  @media (max-width: 600px) {
+    width: 28rem;
+    height: 28rem;
+  }
   & input {
-    width: 20rem;
+    width: 70%;
     padding: 8px;
     font-size: 20px;
   }
