@@ -12,4 +12,4 @@
 
 ## Screenshot
 
-<img src="src/assets/recipe-app-gif.gif" alt="recipe" style="zoom: 200%;" />
+<img src="src/asset/recipe-app-gif.gif" alt="user" style="zoom: 200%;" />
